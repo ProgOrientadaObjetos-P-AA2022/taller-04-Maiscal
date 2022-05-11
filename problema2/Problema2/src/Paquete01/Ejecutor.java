@@ -4,17 +4,28 @@
  */
 package Paquete01;
 
+import Paquete02.Profesor;
+
 /**
  *
  * @author maisc
  */
-public class Problema1 {
+public class Ejecutor {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Profesor obj1 = new Profesor ();
+        Profesor obj2 = new Profesor ("Pato","Garcia","09445548410", 1005);
+        
+        obj1.sueldoTotal();
+        obj2.sueldoTotal();
+        
+        System.out.println(obj1);
+        System.out.println(obj2); 
     }
     
 }
